@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Calculator</h1>
+    <table>
+        <tr>
+            <td colspan="4" class="display">
+                <div>{{expression}}</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button (click)="allClear()">AC</button></td>
+            <td colspan="2"><button (click)="clear()">C</button></td>
+        </tr>
+        <tr>
+            <td><button class="num" (click)="numPress(7)">7</button></td>
+            <td><button class="num" (click)="numPress(8)">8</button></td>
+            <td><button class="num" (click)="numPress(9)">9</button></td>
+            <td><button class="oper" (click)="operPress('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="num" (click)="numPress(4)">4</button></td>
+            <td><button class="num" (click)="numPress(5)">5</button></td>
+            <td><button class="num" (click)="numPress(6)">6</button></td>
+            <td><button class="oper" (click)="operPress('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="num" (click)="numPress(1)">1</button></td>
+            <td><button class="num" (click)="numPress(2)">2</button></td>
+            <td><button class="num" (click)="numPress(3)">3</button></td>
+            <td><button class="oper" (click)="operPress('*')">x</button></td>
+        </tr>
+        <tr>
+            <td><button class="num" (click)="numPress(0)">0</button></td>
+            <td><button class="num" (click)="numPress('.')">.</button></td>
+            <td><button class="equal" (click)="calculateExpression()">=</button></td>
+            <td><button class="oper" (click)="operPress('/')">/</button></td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,104 @@
+@media screen and (min-width:720px) {
+    .container {
+        width: 50%;
+
+    }
+}
+
+@media screen and (max-width:300px) {
+    .container {
+        width: 100%;
+
+        table {
+            width: 90% !important;
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+    .container {
+        width: 90%;
+
+        table {
+            width: 80% !important;
+        }
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:720px) {
+    .container {
+        width: 80%;
+
+        table {
+            width: 70% !important;
+        }
+    }
+}
+
+.container {
+    margin: auto;
+    background-image: linear-gradient(to right, #fff, darkgrey, #fff);
+    min-height: 100vh;
+    padding-top: 40px;
+    text-align: center;
+
+    table {
+        width: 60%;
+        margin: auto;
+
+        tr {
+            width: 100%;
+            height: 50px;
+
+            td {
+                width: 25%;
+
+                button {
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 20%;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: medium;
+                    font-weight: bold;
+
+                    &.num {
+                        background-color: darkgrey;
+                        border-radius: 100%;
+                    }
+
+                    &.oper {
+                        border-radius: 100%;
+                        background-color: aqua;
+                    }
+
+                    &.equal {
+                        border-radius: 100%;
+                        background-color: blue;
+                    }
+
+                    &:hover {
+                        background-color: darken($color: #000000, $amount: 0);
+                        color: #fff;
+                    }
+                }
+
+
+            }
+
+            td.display {
+                text-align: end;
+                border-radius: 10%;
+                border: 2px black solid;
+                background-color: #a8ccd7;
+
+                div {
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    font-weight: bold;
+                    font-size: large;
+                }
+            }
+        }
+    }
+}
